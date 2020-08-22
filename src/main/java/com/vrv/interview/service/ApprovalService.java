@@ -1,12 +1,12 @@
 package com.vrv.interview.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.vrv.interview.domain.Book;
+import com.vrv.interview.domain.Approval;
 
 /**
- * 图书 Service
+ * 审批单 Service
  *
  * @author hycao
  */
-public interface BookService extends IService<Book> {
+public interface ApprovalService extends IService<Approval> {
 }

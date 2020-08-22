@@ -2,49 +2,43 @@ package com.vrv.interview.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.vrv.interview.enums.ApprovalStatusEnum;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.time.LocalDateTime;
 
 /**
- * 图书类
+ * 审批类
  *
  * @author hycao
  */
 @Data
-@TableName(value = "book")
-public class Book {
+@Accessors(chain = true)
+@TableName(value = "approval")
+public class Approval {
 
     /**
-     * 图书编号
+     * 审批单号
      */
     @TableId
     private String id;
 
     /**
-     * 图书名称
+     * 审批项目名称
      */
     private String name;
 
     /**
-     * 作者
+     * 审批时间
      */
-    private String author;
+    private LocalDateTime approvalTime;
 
     /**
-     * 出版社名称
+     * 审批状态
+     * @see ApprovalStatusEnum
      */
-    private String publishCompany;
-
-    /**
-     * 图书状态，true 可用，false 不可用
-     */
-    private Boolean status;
-
-    /**
-     * 图书价格
-     */
-    private Double charge;
+    private ApprovalStatusEnum status;
 
     /**
      * 创建时间

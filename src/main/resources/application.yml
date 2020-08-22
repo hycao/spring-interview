@@ -13,6 +13,8 @@ spring:
 
 # Mybatis-plus 配置
 mybatis-plus:
+  # 支持统配符 * 或者 ; 分割
+  typeEnumsPackage: com.vrv.interview.enums
   mapper-locations: classpath*:/mybatis/mappers/*.xml
 
 # 日志路径配置
