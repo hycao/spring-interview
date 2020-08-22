@@ -1,0 +1,22 @@
+# 项目基础配置
+server:
+  port: 8090
+  servlet:
+    context-path: /interview
+
+# 数据库连接配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/interview?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+
+# Mybatis-plus 配置
+mybatis-plus:
+  mapper-locations: classpath*:/mybatis/mappers/*.xml
+
+# 日志路径配置
+customize:
+  log:
+    name: interview
+    path: ./logs
