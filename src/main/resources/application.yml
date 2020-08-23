@@ -13,6 +13,7 @@ spring:
 
 # Mybatis-plus 配置
 mybatis-plus:
+  typeEnumsPackage: com.vrv.interview.enums
   mapper-locations: classpath*:/mybatis/mappers/*.xml
 
 # 日志路径配置

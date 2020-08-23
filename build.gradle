@@ -21,6 +21,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-aop'
+    compile 'org.springframework.boot:spring-boot-starter-quartz'
 
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
     compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'
