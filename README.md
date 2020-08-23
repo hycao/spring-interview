@@ -17,3 +17,15 @@ spring interview for java
 
 初始化 sql  位置: `src/main/resources/db/init.sql`
 
+
+## 题目描述
+
+该项目中包含三个分支，分别为 `quartz`、`timezone` 和`ticket`
+
+对应题目如下：
+
+* quartz: 定时器题目
+* timezone： 时区问题 
+* ticket： 模拟抢票
+
+其中，`quartz(定时器题目)`、`timezone(时区问题)` 为可以联网查询题目，`ticket(模拟抢票)`为不可联网查询问题
