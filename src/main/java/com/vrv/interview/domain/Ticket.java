@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 public class Ticket {
 
     /**
-     * 图书编号
+     * 编号
      */
     @TableId
     private String id;
